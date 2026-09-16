@@ -1,0 +1,15 @@
+services:
+  product-db:
+    image: postgres:16-alpine
+    container_name: csharp-product-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=ProductDbPass123!
+      - POSTGRES_DB=ProductCatalogDb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+
+volumes:
+  pg-data:

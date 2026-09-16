@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ProductManagement.Api/ProductManagement.Api.csproj" />
+  <Project Path="ProductManagement.Tests.Integration/ProductManagement.Tests.Integration.csproj" Id="4e0e41c1-a19a-4de0-90e2-31f1bf101d06" />
+  <Project Path="ProductManagement.Tests.Unit/ProductManagement.Tests.Unit.csproj" Id="f3759009-f266-4520-9875-df6e03585320" />
+</Solution>

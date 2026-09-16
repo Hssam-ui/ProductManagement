@@ -1,0 +1,23 @@
+trigger:
+  - master
+
+resources:
+  repositories:
+    - repository: SharedTemplates
+      type: git
+      name: SharedTemplates
+stages:
+  - template: dotnet/dotnet-core-ci.yml@SharedTemplates
+    parameters:
+      dotNetVersion: "8.x"
+      buildConfiguration: "Release"
+      projectPath: "ProductManagement.Api/ProductManagement.Api.csproj"
+      unitTestProjectPath: "ProductManagement.Tests.Unit"
+      integrationTestProjectPath: "ProductManagement.Tests.Integration"
+
+
+
+
+
+
+
